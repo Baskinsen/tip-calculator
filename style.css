@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');   
+
+body {
+    background-color:  hsl(185, 41%, 84%);
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-size: 16px;
+}
+     
+main {
+    margin-top: 200px;
+    margin-left: 380px;
+     width: 700px;
+     height: auto;
+     text-align: center;
+     background-color: white;
+     display: grid;
+     grid-template-columns: repeat(2, 350px);
+     padding: 30px;
+     border-radius: 15px;
+     gap: 10px;
+ }
+ 
+ 
+ .bill-sec {
+    display: block;
+    justify-content: left;
+    text-align: left;
+}
+
+.bill-sec label {
+    display: block;
+
+}
+
+label {
+    font-size: 14px;
+    padding-bottom: 5px;
+    color: hsl(184, 14%, 56%);
+}
+
+.display-sec {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    text-align: left;
+    padding: 20px 50px 20px 50px;
+    border-radius: 15px;
+}
+
+.display-sec div {
+    display: grid;
+    grid-template-columns: repeat(2,120px);
+    column-gap: 30px;
+    margin: 0;
+}
+
+.display-sec div p {
+    
+    font-size: 13px;
+    color: hsl(185, 41%, 84%);
+}
+
+.display-sec div p span {
+    font-size: 12px;
+    color: hsl(184, 14%, 56%);
+}
+
+.display-sec div h1 {
+    font-size: 40px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.display-sec input[type='button'] {
+    margin-top: 130px;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color:  hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+.display-sec input[type="button"]:disabled {
+    cursor: default;
+}
+
+
+.display-sec input:hover:enabled {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.bill-sec div {
+    margin-bottom: 30px;
+}
+
+ input {
+     font-weight: 700;
+     font-family: 'Space Mono', monospace;
+     font-style: normal;
+     font-size: 16px;
+     
+ }
+ 
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+ }
+
+ #dol {
+     background-image: url(images/icon-dollar.svg);
+     background-repeat: no-repeat;
+     background-position: 5%;
+
+ }
+ 
+ #peeps {
+     background-image: url(images/icon-person.svg);
+     background-repeat: no-repeat;
+     background-position: left;
+     background-position: 5%;
+ }
+
+ input[type="number"] {
+     height: 40px;
+     background-color: hsl(189, 41%, 97%);
+     border: none;
+     width: 300px;
+     color: hsl(183, 100%, 15%);
+     text-align: right;
+     box-sizing: border-box;
+     outline: none;
+     border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+ }
+ 
+ input[type="number"]:focus {
+     border:2px solid hsl(172, 67%, 45%);
+ }
+ 
+ 
+ .tips {
+     display: grid;
+     grid-template-columns: repeat(3,95px);
+     gap: 10px;
+ }
+ 
+input[type="radio"] {
+    display: none;
+}
+
+ .tips label {
+     background-color: hsl(183, 100%, 15%);
+     padding-top: 12px;
+     font-size: 20px;
+     text-align: center;
+     color: white;
+     height: 40px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background 0.5s;
+ }
+ 
+ .tips input[type="radio"]:checked + label{
+    background-color:  hsl(172, 67%, 45%);
+ }
+
+ .tips input[type="number"] {
+     width: 95px;
+     height: auto;
+     
+ }
+
+#error {
+    float: right;
+    margin-right: 50px;
+    color: red;
+    opacity: 0.5;
+    display: none;
+}
+
+#peeps:focus{
+    border-color: red;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } 
+    
